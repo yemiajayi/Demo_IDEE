@@ -1,0 +1,222 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+  <head>
+  <meta http-equiv="content-type" content="text/html; charset=windows-1250">
+  <meta name="generator" content="PSPad editor, www.pspad.com">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <link type="text/css" rel="stylesheet" href="icee.css">
+  <title>IDEE</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+  <script type="text/javascript" src="icee.js"></script>  
+  </head>
+  <body>
+    <div id="heading">
+    <!--<div id="toplinks"><a  class="toplinks" href="#">HOME | </a><a class="toplinks" href="#">SIGN-UP | </a><a class="toplinks" href="#">LOGIN | </a><a class="toplinks" href="#">CONTACT</a></div>-->
+    <h1><a href="index.html">IDEE 2014</a></h1>
+    <b>May 26-30,2014</b>   ICT Building Joukahaisenkatu 2A, Turku, FINLAND
+    </div>
+    <nav class="clearfix" id="nav1">
+      <ul class="clearfix">
+        <li><a href="icee.html">IDEE 2012</a></li>
+        <li><a href="program.html">Program</a></li>
+        <li><a href="abstracts.html">Abstracts</a></li>
+        <li><a href="reg.html">Registration</a></li>
+        <li><a href="travel.html">Travel</a></li>
+        <li><a href="#">Information</a></li>
+      </ul>
+      <a href="#" id="pull">Menu</a>
+    </nav>
+<div id="container">    
+  <aside>
+      <div id="imgText">
+    <img id="img1" src="images/reg.png" alt="aside picture">
+    <!--<p id="text">The 20th International Conference on electrical Engineering 2014</p>-->
+      </div>
+      <div>
+        <h2 id="idee">Registration</h2>
+        <nav id="nav2">
+          <ul>
+            <li><a href="reg.html">Fees</a></li>
+            <!--<li><a href="#">Committees</a></li>
+            <li><a href="#">Overview</a></li>
+            <li><a href="#">Conference Topics</a></li>
+            <li><a href="#">Venue</a></li>
+          </ul>
+        </nav>
+      </div>-->
+  </aside>
+  <section>
+    <!--<p id="welcome">Home > IDEE 2014 > <b>Sign Up</b></p><br />-->
+    <h2>Registration</h2><hr>
+    
+    <article>
+      <h3>Registration Form</h3>
+      <p>
+       Welcome to the registration form of the IDEE 2014 conference. 
+       The event will take place in Turku, Finland from July 30 to August 3, 2012 
+      </p>
+      
+      <p>
+      After you have completed this form you will be directed to a payment form administered directly by iNEER. 
+      In order to ensure that all relevant details are correct both 
+      in this registration form and in the payment database, you will be asked to fill
+      some identification information in the iNEER form too. We appreciate your co-operation. 
+      </p>
+      
+      <p>
+      The mandatory fields are marked *. Please note that this form must be filled separately for each participant
+       and accompanying person. 
+      </p>
+    </article>
+    
+    <form>
+     <fieldset>
+      <legend>Personal Details</legend>
+      
+      <label for="title">*Title:</label><br>
+        <table id="title">
+                <tr>
+                <td>Prof.<br><input type="radio" name="title" value="Prof" required></td> 
+                <td>Dr.<br><input type="radio" name="title" value="Dr"></td>
+                <td>Mr.<br><input type="radio" name="title" value="Mr"></td>
+                <td>Ms.<br><input type="radio" name="title" value="Ms"></td>
+                </tr>
+        </table>
+         
+        <label for="firstname">*Firstname:</label><br>
+        <input type="text" id="nameF" class="form"  value="" onkeyup="stripnameF('nameF')" onkeydown="stripnameF('nameF')" placeholder="" required autofocus>
+        <div id="first"></div>
+      
+        <label for="lastname">*Lastname:</label><br>
+        <input type="text" id="nameL" class="form"  value="" onkeyup="stripnameL('nameL')" onkeydown="stripnameL('nameL')" placeholder="" required>
+        <div id="last"></div>
+        
+        <label for="organization">*Organization:</label><br>
+        <input type="text" id="org" class="form"  value="" onkeyup="stripnameO('org')" onkeydown="stripnameO('org')" placeholder="" required>
+        <div id="orgs"></div>
+        
+        <label for="position">Position:</label><br>
+        <input type="text" id="pos" class="form"  value="" onkeyup="stripnameP('pos')" onkeydown="stripnameP('pos')" placeholder="">
+        <div id="position"></div>
+        
+        <label for="add1">*Address (line1):</label><br>
+        <input type="text" id="add1" class="form"  value="" onkeyup="stripname1('add1')" onkeydown="stripname1('add1')" placeholder="" required>
+        <div id="address1"></div>
+        
+        <label for="add2">Address (line2):</label><br>
+        <input type="text" id="add2" class="form"  value="" onkeyup="stripname2('add2')" onkeydown="stripname2('add2')" placeholder="">
+        <div id="address2"></div>
+        
+        <label for="add3">Address (line3):</label><br>
+        <input type="text" id="add3" class="form"  value="" onkeyup="stripname3('add3')" onkeydown="stripname3('add3')" placeholder="">
+        <div id="address3"></div>
+        
+        <label for="city">*City/State:</label><br>
+        <input type="text" id="city" class="form"  value="" onkeyup="stripcity('city')" onkeydown="stripcity('city')" placeholder="" required>
+        <div id="CS"></div>
+        
+        <label for="tel">Phone(Mobile):</label><br>
+        <input type="tel" id="tel" name="tel"  value="" onkeyup="stripphone('tel')" onkeydown="stripphone('tel')" placeholder="+358501234567 or +358501234567 ext 23">
+        <div id="phone"></div>
+        
+        <label for="email">*Email Address: </label><br>
+        <input type="email" id="email" class="form"  value="" onkeyup="stripemail('email')" onkeydown="stripemail('email')"placeholder="" required />
+        <div id="ea"></div>
+        
+        <!--<label for="diet">Dietary requirements: </label><br>
+        <textarea id="message" name="diet" row="50" col="80" onkeyup="stripmsg('message')" onkeydown="stripmsg('message')"></textarea>
+        <div id="ta"></div>-->
+        
+        <label for="diet">Dietary requirements: </label><br>
+        <textarea name="diet" row="50" col="80"></textarea><br>
+        
+        <label for="extra person">Accompanying person's name:</label><br>
+        <input type="text" class="form"  value=""><br>
+        
+        <label for="include">My contact details can be included on the list of participants: </label><br>
+        <select name="include">
+            <option value="Yes">Yes</option>
+            <option value="No">No</option>
+        </select> <br>
+    </fieldset>
+    <fieldset>
+      <legend>Registration Type</legend>
+        <select name="delegate">
+            <option value="Full delegate">Full delegate</option>
+            <option value="One day delegate">One day delegate</option>
+            <option value="Student delegate">Two days delegate</option>
+        </select> <br>
+            
+      <p>
+      Note:<br>
+      If you would like to attend as a day delegate on more than one day, please contact <u>info@idee2012.fi</u>.
+      </p>
+      
+      <p>
+      If you select the Student Delegate type, please email proof of student status (a scanned
+      copy of international student card, for example) to <u>info@idee2012.fi</u>.
+      </p>
+    </fieldset>
+        
+    <fieldset>
+      <legend>Catering and Social Events</legend>
+      <h5>Catering</h5>
+      <p>
+      Please confirm the days you will attend the conference and required catering:
+      </p>
+          
+      <input type="checkbox" name="day" value="Tuesday"> Tuesday 
+      <input type="checkbox" name="day" value="Wednesday"> Wednesday
+      <input type="checkbox" name="day" value="Thursday"> Thursday
+      <input type="checkbox" name="day" value="Friday"> Friday
+      
+       <h5>Social Events</h5>
+      <p>
+      Please select the relevant evening function(s) you wish to attend. Please note that these social
+      events are included in the full delegate and accompanying person registration fees only.
+      </p>
+          
+      <input type="checkbox" name="social" value="get-together"> Get-together event (Monday, July 30) <br> 
+      <input type="checkbox" name="social" value="Reception"> Welcome Reception (Tuesday, July 31) <br>    
+      <input type="checkbox" name="social" value="Gala"> Gala Dinner & Award Ceremony (Wednesday, August 1) 
+    </fieldset>
+    <fieldset>
+      <legend>Accommodation and Tours</legend>  
+      <p>
+      Please note that each participant shall take care of the hotel reservations by contacting the
+      hotels drectly. Additional information on the accommodation options is available on the
+      conference website (<a href="index.html">www.icee2012.fi</a>).
+      </p>
+    
+      <p>
+      Optional tours and visits will be offered to conference participants during the event.
+      Most tours will take place on the workshop day, Thursday August 12. The tours and visits 
+      are not included into the conference fee and each participant interested in these opportunities
+      shall register and pay the preferred options using a separate registration form. Additional
+      information on the trips and visits and a link to the registration form are available on the
+      conference website (<a href="index.html">www.icee2012.fi</a>).
+      </p> 
+    </fieldset><br>
+      <input type="submit" name="submit" value="Submit and proceed to the next phase..." id="submit">
+  </form>
+  </section>
+  <div id="sponsors">
+<img src="images/sponsor2.png" class="sponsor">
+<img src="images/ineer.jpg" class="sponsor">
+<img src="images/tek.jpg" class="sponsor">
+<img src="images/tt.jpg" class="sponsor">
+<img src="images/tuas.jpg" class="sponsor">
+<img src="images/tucs.jpg" class="sponsor">
+<img src="images/turku.jpg" class="sponsor">
+</div>
+</div>
+<footer>
+  <div id="footerInfo">
+    IDEE (The Nigerian Association of Engineers)<br />
+    Tel: 390-66-34859 | President: Mogli<br />
+    2nd Floor, ICT Building, 789, Jokaheisenkatu Turku FINLAND<br />
+    E-mail: firstname.lastname@sitemail.nig<br /> 
+  </div>  
+</footer>
+  </body>
+</html>

@@ -1,0 +1,565 @@
+/* CSS Document */
+
+/*html {
+  font-family: sans-serif;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+} */
+
+/*Body style*/
+body {
+      background: url(images/bodybg6.jpg) no-repeat center center fixed; 
+      background-size:cover;
+      margin:0px;
+      font-family:Verdana, Helvetica, Arial, sans-serif;
+      font-size:86%;
+      line-height:23px;
+      /*text-align:justify;*/
+      } 
+
+/*Page heading div*/ 
+#heading {
+            padding:25px 0px 20px 35px;
+            /*padding-bottom:15px;
+            padding-left:20px;*/
+            width:1000px;
+            margin:auto;
+            line-height:5px;
+            }
+            
+/*Index page header*/            
+header {height:400px;
+        width:100%;
+        background: url(images/header3.jpg) no-repeat center center;
+        background-size:cover;
+        filter:alpha(opacity=97);
+        opacity:.97;
+        color:white;
+        } 
+
+/*Index page title div*/                   
+#headerText {float:right;
+            margin:120px 100px 40px 0px;
+            text-align:right;}
+
+/* html has been commented out*/            
+#toplinks {float:right;
+          margin:10px 20px 0px 0px;
+          }
+
+/* html has been commented out*/         
+.toplinks {text-decoration:none;
+          color:#999999;
+          font-size:8pt;}
+          
+/*#linktable {
+          float:right;} */
+          
+/*table td a {
+      color:#cccccc;
+      font-size:8pt;
+      padding:0px 7px 7px 0px;
+      border-right:1px solid #cccccc;
+      box-sizing:border-box;
+      -moz-box-sizing:border-box;
+      -webkit-box-sizing:border-box;
+} */
+
+/*table  td:last-child a {
+      border-right:0;
+}                    */
+
+/* all content div */ 
+#container {
+            width:1000px;
+            margin:auto;
+            }
+
+/* Section style */            
+section {
+        background: url(images/bodybg7.jpg) no-repeat center center; 
+        background-size:cover;
+        width:710px;
+        margin-top:8px;
+        padding:10px 15px 10px 15px;
+        border-radius:8px 8px 8px 8px;
+        float:right;
+        background-color:white;
+        border:1px solid #cccccc;
+        box-shadow: 2px 2px 2px #888888;
+        }
+
+/* webpage Title*/
+h1 {
+    color:#006699;
+    font-size:35pt;
+    }
+
+/* index page title */    
+header h1 {
+    color:#006699;
+    font-size:50pt;
+    }
+
+/* footer for all pages */    
+footer {height:120px;
+        width:100%;
+        margin:0px;
+        clear:both;
+        border-top:3px solid #003333;
+        }
+
+/*  div for footer text */        
+#footerInfo {margin:auto;
+            padding-top:20px;
+            text-align:center;
+            color:#666666;}
+
+/* gneral links */            
+a:link {color:#999999;}
+a:visited {color:#999999;}
+a:hover {color:#009999;}
+
+/* page title link */
+h1 a, h1 a:visited{
+    color:#336699;
+    font-size:35pt;
+    text-decoration:none;
+    }
+
+/* all h2 headings */
+h2 {font-size:18pt;}
+
+/* legend for registration form */   
+legend {color:#009900;
+        font-weight:bold;
+        font-size:90%;
+        }
+
+/* all h3 headings */
+h3 {
+    color:#009900;
+    }
+
+/* aside style*/    
+aside{
+      background: url(images/bodybg7.jpg) no-repeat center center; 
+      background-size:cover;
+      float:left;
+      width:250px;
+      margin:10px 0px 0px 0px;
+      border-radius:8px 8px 8px 8px;
+      background-color:white;
+      border:1px solid #cccccc;
+       box-shadow: 2px 2px 2px #888888;
+      }
+
+/* Aside images */      
+#img1 {
+      width:220px;
+      height:250px;
+      padding:15px 20px 10px 15px;
+      border-radius:20px 20px 20px 20px;
+      position:relative;
+    }
+
+/* div for aside image and text */
+#imgText {position:relative;
+          width:220px;
+          }
+
+/* text on Aside image; has been commented out */    
+#text {position:absolute;
+      z-index:100;
+      color:white;
+      text-align:center;
+      line-height:15px;
+      font-size:10px;
+      font-weight:bold;
+      top:180px;
+      left:15px;
+      height:35px;
+      background-color:rgba(0,180,255,0.3);
+      width:100%;
+      }
+
+/* All subnav title */      
+#idee {color:#336699;
+      line-height:10px;
+      margin-left:30px;} 
+
+/*prseident's image*/   
+#img2 {
+      float:right;
+      height:170px;
+      width:130px;
+      margin:0px 0px 20px 20px;
+      }
+
+/* image on venue section*/      
+#venue2 {
+      float:right;
+      height:140px;
+      width:250px;
+      margin:0px 0px 20px 20px;
+      }
+
+/* a paragraph el; commented out */    
+#welcome {
+          float:right;
+          font-size:9pt;}
+
+/* line under subnav heading */          
+hr {height:2px;
+    width:710px;
+    background:linear-gradient(to right, green, blue);
+    border-radius:2px;}
+
+/* main nav id */      
+#nav1{
+    height:40px;
+    width:100%;
+    background:linear-gradient(to right, green,#3399cc );
+    font-size:11pt;
+    font-family:;
+    font-weight:bold;
+    position:relative;
+    /*border-top:2px solid #330000;*/
+    border-bottom:2px solid #330000;
+}
+
+#nav1 ul {
+      padding:0;
+      margin: 0 auto;
+      width: 960px;
+      height:40px;
+}
+
+#nav1 li {
+      display:inline;
+      float:left;
+}
+
+/* main nav class */
+.clearfix:before,
+.clearfix:after {
+      content:"";
+      display:table;
+}
+
+.clearfix {
+      *zoom: 1;
+}
+
+/* main nav link */
+#nav1 a {
+      color: #ffffff;
+      display:inline-block;
+      width:160px;
+      text-align:center;
+      text-decoration:none;
+      line-height:40px;
+      text-shadow:1px 1px 0px #330000;
+}
+
+#nav1 li a {
+      border-right:1px solid #000033;
+      box-sizing:border-box;
+      -moz-box-sizing:border-box;
+      -webkit-box-sizing:border-box;
+}
+
+#nav1 li:last-child a {
+      border-right:0;
+}
+
+#nav1 a:hover, #nav1 a:active {
+      color:white;
+      background-color:#003366;
+}
+
+/* main nav collapsing for responsive */
+#nav1 a#pull {
+      display:none;
+}
+
+/* subnav id */
+#nav2 {margin-left:-10px;}
+#nav2 ul {list-style-type:none;}
+
+#nav2 a {
+      color: #3399cc;
+      display:inline-block;
+      width:200px;
+      text-align:left;
+      text-decoration:none;
+      line-height:30px;
+      font-weight:bold;
+      padding:0px 0px 0px 10px;
+}
+
+#nav2 a:hover, #nav2 a:active {
+      color:#ffffff;
+      background-color:#003366;
+}
+
+#nav2 li a {
+      border-bottom:1px solid #cccccc;
+      box-sizing:border-box;
+      -moz-box-sizing:border-box;
+      -webkit-box-sizing:border-box;
+}
+
+/* classes for notices/calendar on index page */
+.date {margin-left:20px;}
+.hrDate {height:2px;
+    width:400px;
+    background:linear-gradient(to right, green, blue);
+    border-radius:2px;}
+.h3Date {color:black;
+        margin-top:20px;
+        margin-bottom:10px;}
+        
+#sectionDate {width:960px;
+              margin:auto;
+              margin-top:15px;}
+              
+.tableDate {font-size:10pt;
+            line-height:20px;
+            }
+            
+#rightTableDate {padding:0px 0px 0px 40px;}
+
+.linkDate {text-decoration:none;
+            color:#006600;}
+            
+.linkDate:hover {text-decoration:underline;}
+
+/* class Committee, conference fee, travelLinks tables */
+.tableChair {font-size:10pt;
+            line-height:15px;
+            border-spacing:20px;
+            }
+            
+/* class travelLinks tables */
+.travelLinks {font-size:10pt;
+            line-height:15px;
+            border-spacing:20px;
+            }
+
+/* Speaker expand/collapse */                     
+#speaker1, #speaker2, #speaker3, #speaker4, #fees,#travelLinks,#sokos1,#sokos2,#sokos3,#radisson,#guidelines,#guidelines2 {display:none;}
+
+.speakerTable {
+          font-size:10pt;
+          text-align:justify;
+          background-color:#ffffd6;
+          }
+.speakerTable td {padding:3px 17px 17px 17px;}
+.speakerName {text-decoration:none;}
+
+.guidelines {
+          font-size:10pt;
+          text-align:justify;
+          }
+          
+.guidelines td {padding:3px 17px 17px 17px;}            
+
+#sponsors {width:960px;
+            border:1px solid #cccccc;
+            height:60px;
+            margin:30px 0px 30px 0px;
+            float:right;
+            padding:10px 10px 10px 10px;
+            border-radius:8px 8px 8px 8px;
+            background-color:white;
+            }
+.sponsor {padding-left:20px;}
+
+#first,#last,#orgs,#position,#ea,#phone,#address1,#address2,#address3,#CS {color:#ff0000;}
+
+textarea {height:100px;
+          width:250px;}
+          
+fieldset {border-radius:8px;
+          margin-top:10px;}
+          
+.form {width:250px;
+        height:25px;}
+        
+#title {border-spacing:30px;}
+
+#overview {font-size:10pt;
+          border-top:2px solid #669966;
+          border-bottom:1px solid #669966;
+          border-right:1px solid #669966;
+          border-left:1px solid #669966;
+          border-spacing:0px;
+          margin-top:15px;}
+          
+.col1 {background-color:#e6e6e8;
+      font-weight:bold;}
+        
+.col2 {background-color:#EEF8F1;}
+
+#overview td {padding:10px 20px 10px 15px;
+              border-bottom:1px solid #669966;
+              border-collapse:collapse;
+              }
+
+@media screen and (max-width: 600px) {
+      #nav1 {
+      height:auto;
+      }
+      
+      #nav1 ul {
+      width: 100%;
+      display:block;
+      height:auto;
+      }
+      
+      #nav1 li {
+      width:50%;
+      float:left;
+      position:relative;
+      }
+      
+      #nav1 li a {
+      border-bottom: 1px solid #336699;
+      border-right: 1px solid #336699;
+      }
+      
+      #nav1 a {
+      text-align:left;
+      width:100%;
+      text-indent:25px;
+      }
+      
+      h1 {
+      color:#336699;
+      }
+
+      #container {
+      width: 100%;
+      display:block;
+      height:auto;
+      }
+      
+      section {
+      width:95%;
+      /*float:left;*/
+      position:relative;
+      text-align:left;
+      } 
+      
+      aside {
+      width:100%;
+      /*float:left;*/
+      position:relative;
+      } 
+      
+      hr {width:100%;} 
+      
+      #heading {width:100%;
+      }  
+      
+      #welcome {display:none;} 
+      
+      #toplinks {float:left;
+      line-height:0px;
+      }
+}
+
+@media only screen and (max-width : 480px) {
+      #nav1 {
+      border-bottom:0;
+      }
+      
+      #nav1 ul {
+      display:none;
+      height:auto;
+      }
+      
+      #nav1 a#pull {
+      display:block;
+      background-color:#0099CC;
+      width:100%;
+      position:relative;
+      }
+      
+      #nav1 a#pull:after {
+      content:"";
+      background: url('images/menu5.png') no-repeat;
+      width:20px;
+      height:20px;
+      display:inline-block;
+      position:absolute;
+      right:15px;
+      top: 10px;
+      }
+      
+      h1 {
+      color:#336699;
+      }
+      
+      #heading {width:100%;
+      line-height:15px;
+      margin-left:-15px;
+      }
+      
+       #container {
+      width: 100%;
+      display:block;
+      height:auto;
+      }
+      
+      section {
+      width:95%;
+      /*float:left;*/
+      position:relative;
+      } 
+      
+      aside {
+      width:100%;
+      /*float:left;*/
+      position:relative;
+      }
+      
+      #welcome {display:none;}
+      
+      #toplinks {float:left;
+      line-height:0px;
+      /*margin:10px 20px 0px 0px;*/
+          } 
+       
+}
+
+@media only screen and (max-width : 320px) {
+      #nav1 li {
+      display:block;
+      float:none;
+      width:100%;
+      }
+      
+      #nav1 li a {
+      border-bottom:1px solid #336699;
+      }
+      
+      #container {
+      width: 100%;
+      display:block;
+      height:auto;
+      position:relative;
+      }
+      
+      section {
+      width:80%;
+      margin:auto;
+      /*float:left;*/
+      position:relative;
+      } 
+      
+      #heading {width:100%;
+      }
+      
+}          

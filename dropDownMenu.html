@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Javascript CSS Drop Menu Tutorial By Adam Khoury</title>
+<style type="text/css">
+body{ margin:0px; }
+div#myheader{
+	height:100px;
+	background:#D2E9FF;
+	border-bottom:#09F 1px solid;
+}
+div#logo{
+	height:75px;
+	border:#09F 1px dashed;
+	font-size:44px;
+	padding:0px 12px;
+}
+div#headermenusystem{ margin-left:16px; }
+div#headermenusystem > div{ float:left; margin:0px 20px; }
+div.dropmenus {
+	display:none;
+	position:absolute;
+	top:100px;
+	width:120px;
+	background:#D2E9FF;
+	z-index:2;
+	padding:4px;
+	border:#0385CB 3px solid;
+	border-top:none;
+	-moz-border-radius:0px 0px 8px 8px;
+	border-radius:0px 0px 8px 8px;
+}
+div.dropmenus > a {
+	display:block;
+	margin:4px;
+	padding:7px;
+	font-size:14px;
+	text-decoration:none;
+	background:#E8E8E8;
+	border:#666 1px solid;
+	-moz-border-radius:3px; 
+	border-radius:3px; 
+	color:#000;
+}
+div.dropmenus > a:hover {
+	background:#FFF;
+	border:#06F 1px solid; 
+	color: #06F;
+}
+div#dropmenu1{left:24px;}
+div#dropmenu2{left:116px;}
+div#dropmenu3{left:214px;}
+
+div#restofpage{ padding:36px; }
+</style>
+<script type="text/javascript" src="js/fadeEffects.js"></script>
+<script type="text/javascript">
+var ma = ["dropmenu1","dropmenu2","dropmenu3"];
+function dropMenu(x){
+	for (var m in ma) {
+		if(ma[m] != x){
+			document.getElementById(ma[m]).style.display = "none";
+		}
+	}
+	if(document.getElementById(x).style.display == 'block'){
+		fadeOut(x);
+	} else {
+		fadeIn(x);
+	}
+}
+</script>
+</head>
+<body>
+<!-- START HEADER -->
+<div id="myheader">
+  <div id="logo">Our Company</div>
+  <!-- START MENU SYSTEM -->
+  <div id="headermenusystem">
+    <div id="cont1">
+      <a href="#" onclick="return false;" onmousedown="dropMenu('dropmenu1')">Services</a>
+      <div id="dropmenu1" class="dropmenus">
+        <a href="services.php?x=pool">Pool Cleaning</a>
+        <a href="services.php?x=yard">Yard Work</a>
+        <a href="services.php?x=pest">Pest Removal</a>
+      </div>
+    </div>
+    <div id="cont2">
+      <a href="#" onclick="return false;" onmousedown="dropMenu('dropmenu2')">Locations</a>
+      <div id="dropmenu2" class="dropmenus">
+        <a href="locations.php?x=Queens">Queens</a>
+        <a href="locations.php?x=Brooklyn">Brooklyn</a>
+        <a href="locations.php?x=Bronx">Bronx</a>
+      </div>
+    </div>
+    <div id="cont3">
+      <a href="#" onclick="return false;" onmousedown="dropMenu('dropmenu3')">Staff</a>
+      <div id="dropmenu3" class="dropmenus">
+        <a href="staff.php?x=george">George</a>
+        <a href="staff.php?x=allen">Allen</a>
+        <a href="staff.php?x=frank">Frank</a>
+      </div>
+    </div>
+    <div>
+      <a href="contact.php">Contact Us</a>
+    </div>
+  </div>
+  <!-- END MENU SYSTEM -->
+</div>
+<!-- END HEADER -->
+<div id="restofpage" onmousedown="dropMenu()" style="height:500px;">
+  <h2>Welcome</h2>
+  <p>Welcome to my company website...</p>
+</div>
+</body>  
+</html> 
