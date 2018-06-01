@@ -1,1 +1,1 @@
-This project was done to demonstrated a website for the 2014 International Conference of Electrical Engineering
+This project was done to demonstrate a website for the 2014 International Conference of Electrical Engineering
